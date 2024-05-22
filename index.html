@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PokeAPI Proxy</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Pokemon Serach App</h1>
+    <div class="container">
+      <h4>Search for Pokemon Name or ID:</h4>
+      <div class="serach-bar">
+        <input type="text" id="search-input" required />
+        <button type="submit" id="search-button">Serach</button>
+      </div>
+      <div class="img-content">
+        <p id="pokemon-name"></p>
+        <p id="pokemon-id"></p>
+        <h5 id="weight"></h5>
+        <h5 id="height"></h5>
+        <img id="sprite" />
+        <div aria-label="special power">
+          <p id="types"></p>
+        </div>
+      </div>
+      <div class="table-contaier">
+        <table>
+          <thead>
+            <tr>
+              <th>Base</th>
+              <th>Stats</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HP:</td>
+              <td id="hp"></td>
+            </tr>
+            <tr>
+              <td>Attack:</td>
+              <td id="attack"></td>
+            </tr>
+            <tr>
+              <td>Defense:</td>
+              <td id="defense"></td>
+            </tr>
+            <tr>
+              <td>Sp. Attack:</td>
+              <td id="special-attack"></td>
+            </tr>
+            <tr>
+              <td>Sp. Defense:</td>
+              <td id="special-defense"></td>
+            </tr>
+            <tr>
+              <td>Speed:</td>
+              <td id="speed"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
